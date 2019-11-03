@@ -1,0 +1,71 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Syncopate:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+// @font-face {
+//   font-family: BodyFont;
+//   src: url(../src/assets/HelveticaNeueLight.ttf);
+// }
+// @font-face {
+//   font-family: BodyFont;
+//   src: url(../src/assets/HelveticaNeueBold.ttf);
+//   font-weight: bold;
+// }
+
+$menu-font-color: #fafaff;
+$menu-highlight-color: #ffd400;
+$beside-yellow: #ffd400;
+$light-bg-color: #fafaff;
+$dark-bg-color: #000;
+$light-txt-color: #fafaff;
+$dark-txt-color: #000;
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  #app {
+    font-family: "Syncopate", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $light-txt-color;
+    background: $dark-bg-color;
+
+    p {
+      font-size: 1em;
+      font-family: "Montserrat";
+    }
+
+    input,
+    textarea {
+      font-size: 1em;
+      font-family: "Montserrat";
+    }
+
+    .arrows {
+      height: 15px;
+    }
+
+    h1 {
+      color: $beside-yellow;
+    }
+
+    svg {
+      fill: #fff;
+    }
+  }
+}
